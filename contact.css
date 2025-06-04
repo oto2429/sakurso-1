@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: serif;
+  padding: 0 16px;
+  background-color: rgb(253, 249, 242);
+}
+html{
+   scroll-behavior: smooth;
+}
+/* header start */
+header{
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid  rgb(208, 0, 14) ;
+    position: sticky;
+    top: 0;
+    background-color:rgb(253, 249, 242);
+}
+.left p{
+    font-size: 14px;
+    color:  rgb(208, 0, 14);
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    gap: 28px;
+}
+.right a{
+    color:  rgb(220, 64, 72);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 19px;
+}
+.right a:hover{
+    text-decoration: underline;
+}
+
+/* burger css */
+.burger {
+    display: none;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  background:rgb(253, 249, 242);
+  color: rgb(220, 64, 72);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* მენიუს ფონი */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(212, 212, 211);
+  color: rgb(208, 0, 14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 2s ease;
+  z-index: 1000;
+}
+
+/* აქტიური როცა ჩექბოქსი ჩართულია */
+#menu-toggle:checked ~ .menu {
+  transform: translateY(0);
+   transition: 1.5s;
+   opacity: 0.95;
+}
+
+/* დახურვის ღილაკი */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  color: rgb(220, 64, 72);
+}
+
+/* მენიუს ლინკები */
+.menu-links {
+  position: relative;
+  bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+
+.menu-links a {
+  color: rgb(220, 64, 72);
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.2s ease;
+}
+
+.menu-links a:hover {
+  color: white;
+}
+
+
+@media (max-width: 550px) {
+  .burger {
+    display: flex;
+  }
+  .right{
+    display: none;
+  }
+}
+/* header end */
+
+
+main{
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 900px;
+}
+.mainson{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-image:url(https://static.wixstatic.com/media/88aac0_a62c57f8ddc94629ac1f4f5ec79faced~mv2.png);
+}
+.get{
+  padding: 15px;
+  background-color: white;
+  width: 431px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  color: rgb(208, 0, 14) ;
+}
+.pipqi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.get h1{
+  font-size: 25px;
+}
+.get p{
+  font-size: 17px;
+  line-height: 25px;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(208, 0, 14) ;
+}
+.footerson{
+  display: flex;
+  flex-direction: column;
+  padding: 150px 200px 100px 30px;
+}
+#foter2{
+  display: flex;
+  gap: 20px;
+}
+#foter1 {
+  color:  rgb(208, 0, 14);
+  text-decoration-line: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+#foter2 a{
+  color:  rgb(208, 0, 14);
+  text-decoration-line: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.wix{
+  color:rgb(208, 0, 14) ;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 100px 60px 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px){
+  body{
+    padding: 0;
+  }
+  main{
+    padding: 10px 0;
+    height: 300px;
+  }
+  .empty{
+    display: none;
+  }
+  .mainson{
+    width: 100%;
+  }
+  .mainson{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 20px;
+    height: 320px;
+  }
+    footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px ;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .footerson{
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  #foter2 a{
+    padding: 0;
+  }
+  #foter2{
+    padding-top: 20px;
+    gap: 0;
+  }
+  .wix{
+    padding: 30px 0 20px 20px;
+    width: 350px;
+  }
+}
