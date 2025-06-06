@@ -165,13 +165,17 @@ main{
   object-fit: cover;
   
 }
+
 .img22{
   display: flex;
   flex-direction: row;
   gap: 40px;
+  width: 100%;
 }
+
 .img22 img{
-  width: 50%;
+
+  width: 100%;
   height: 402px;
   object-fit: cover;
 }

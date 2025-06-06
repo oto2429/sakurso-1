@@ -137,8 +137,8 @@ header{
   font-size: 60px;
 }
 .art img{
-  height: 556px;
-  width: 556px;
+  width: 100%;
+
 }
 main{
   display: flex;
@@ -147,13 +147,16 @@ main{
 }
 .mainson{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 50px;
+  padding: 0 50px;
+  
 }
 .art{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 .art:hover{
   cursor: pointer;

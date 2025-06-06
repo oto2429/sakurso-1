@@ -167,10 +167,10 @@ main{
 .img22{
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 100px;
 }
 .img22 img{
-  width: 50%;
+  width: 100%;
   height: 402px;
   object-fit: cover;
 }

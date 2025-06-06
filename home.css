@@ -142,8 +142,8 @@ header {
   height: 938.31px;
 }
 
-.main1son1,
-.main1son2 {
+.main1son1
+{
   width: 50%;
 }
 
@@ -254,7 +254,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+ 
 }
 
 .perebi {
@@ -269,7 +269,8 @@ header {
 }
 
 .perebi img {
-  height: 1070px;
+ max-height: 1070px;
+  width: 100%;
 
 }
 
